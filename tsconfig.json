@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+		"module": "commonjs",
+   		"target": "es5",
+		"sourceMap": false,
+        "removeComments": true,
+        "outDir": "./dist"
+    },
+    "files": [
+        "src/Run.ts",
+        "src/recorder-google-chrome-extension/background.ts"
+    ]
+}

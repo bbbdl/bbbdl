@@ -1,0 +1,42 @@
+{
+	"name": "bbbdl",
+	"author": {
+		"name": "Hossein Hosni",
+		"email": "hosni.hossein@gmail.com"
+	},
+	"scripts": {
+		"watch:webpack": "webpack --progress -w",
+		"watch:ts": "tsc -w",
+		"build:webpack": "webpack --progress",
+		"build:ts": "tsc",
+		"run": "node dist/Run.js",
+		"watch": "npm run watch:webpack &; npm run watch:ts &",
+		"dev": "npm run run &\nnpm run watch:webpack &\n npm run watch:ts &"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"bent": "^7.1.2",
+		"dotenv": "^10.0.0",
+		"ejs": "^3.0.2",
+		"mime": "^2.4.4",
+		"mysql": "^2.18.1",
+		"puppeteer": "^2.1.1",
+		"xml2js": "^0.4.23"
+	},
+	"devDependencies": {
+		"@types/bent": "^7.0.2",
+		"@types/chrome": "0.0.104",
+		"@types/dom-mediacapture-record": "^1.0.4",
+		"@types/ejs": "^3.0.2",
+		"@types/mime": "^2.0.1",
+		"@types/mysql": "^2.15.9",
+		"@types/node": "^10.17.59",
+		"@types/puppeteer": "^2.0.1",
+		"@types/xml2js": "^0.4.8",
+		"tslint": "^6.1.1",
+		"typescript": "^3.8.3",
+		"webpack": "^5.37.1",
+		"webpack-cli": "^4.7.0"
+	},
+	"main": "src/Run.ts"
+}
